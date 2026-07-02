@@ -2,6 +2,7 @@
 
 * Студент: [Артур Голованов](https://up.htmlacademy.ru/htmlcss-individual/3/user/2715083).
 * Наставник: [Анна Лисенкова].
+* Сайт: [Мой проект Sedona](https://arturreg75.github.io/2715083-sedona-3/).
 
 ---
 
