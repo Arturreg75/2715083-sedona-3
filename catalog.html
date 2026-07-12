@@ -39,7 +39,7 @@
         <a class="button button-want" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="catalog-main" data-test="main">
+    <main class="page-main" data-test="main">
       <header class="catalog-header">
         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
@@ -50,7 +50,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <span class="breadcrumbs-link" aria-current="page">Гостиницы</span>
+              <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ol>
         </nav>
@@ -102,10 +102,13 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <label class="price" for="price-from">От</label>
+              <input class="field" id="price-from" type="number" name="price-from" value="0">
+              <label class="price" for="price-to">До</label>
+              <input class="field" id="price-to" type="number" name="price-to" value="9000">
             </fieldset>
-
             <button class="button button-apply" type="submit">Показать</button>
             <button class="button button-reset" type="reset">Сбросить</button>
           </form>
@@ -186,7 +189,7 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <span class="pagination-link pagination-current" aria-current="page">1</span>
+            <a class="pagination-link pagination-current" href="#" aria-current="page">1</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -209,7 +212,8 @@
         </p>
         <form class="form mailing-form mailing-catalog-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш e-mail</label>
-          <input class="mailing-input mailing-catalog-input" type="email" name="email" id="email" placeholder="user@mail.ru" required>
+          <input class="mailing-input mailing-catalog-input" type="email" name="email" id="email"
+            placeholder="user@mail.ru" required>
           <button class="button button-mailing button-mailing-catalog" type="submit">Подписаться</button>
         </form>
       </section>
