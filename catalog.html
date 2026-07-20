@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -106,9 +107,9 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="price" for="price-from">От</label>
-              <input class="field" id="price-from" type="number" name="price-from" value="0">
+              <input class="field-price" id="price-from" type="number" name="price-from" value="0">
               <label class="price" for="price-to">До</label>
-              <input class="field" id="price-to" type="number" name="price-to" value="9000">
+              <input class="field-price" id="price-to" type="number" name="price-to" value="9000">
             </fieldset>
             <button class="button button-apply" type="submit">Показать</button>
             <button class="button button-reset" type="reset">Сбросить</button>
@@ -139,8 +140,8 @@
             <a class="card-link" href="#">
               <h3 class="card-title">Amara Resort & Spa</h3>
             </a>
-            <a class="card-link" href="#"></a>
-            <img class="card-image" src="images/amara.jpg" width="300" height="212" alt="Amara Resort & Spa">
+            <a class="card-link" href="#">
+              <img class="card-image" src="images/hotels/amara-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
             </a>
             <p class="card-text">Гостиница <span class="card-price">От 4000 ₽</span></p>
             <a class="button button-more" href="#">Подробнее</a>
@@ -154,8 +155,8 @@
             <a class="card-link" href="#">
               <h3 class="card-title">Villas at Poco Diablo</h3>
             </a>
-            <a class="card-link" href="#"></a>
-            <img class="card-image" src="images/villas.jpg" width="300" height="212"  alt="Villas at Poco Diablo">
+            <a class="card-link" href="#">
+              <img class="card-image" src="images/hotels/villas-1.jpg" width="300" height="212"  alt="Villas at Poco Diablo">
             </a>
             <p class="card-text">Гостиница <span class="card-price">От 5000 ₽</span></p>
             <a class="button button-more" href="#">Подробнее</a>
@@ -169,8 +170,8 @@
             <a class="card-link" href="#">
               <h3 class="card-title">Desert Quail Inn</h3>
             </a>
-            <a class="card-link" href="#"></a>
-            <img class="card-image" src="images/desert.jpg" width="300" height="212" alt="Desert Quail Inn">
+            <a class="card-link" href="#">
+              <img class="card-image" src="images/hotels/desert-1.jpg" width="300" height="212" alt="Desert Quail Inn">
             </a>
             <p class="card-text">Гостиница <span class="card-price">От 2500 ₽</span></p>
             <a class="button button-more" href="#">Подробнее</a>
@@ -184,8 +185,8 @@
             <a class="card-link" href="#">
               <h3 class="card-title">GreenTree Inn</h3>
             </a>
-            <a class="card-link" href="#"></a>
-            <img class="card-image" src="images/greenTree.jpg" width="300" height="212"  alt="GreenTree Inn">
+            <a class="card-link" href="#">
+              <img class="card-image" src="images/hotels/greentree-1.jpg" width="300" height="212"  alt="GreenTree Inn">
             </a>
             <p class="card-text">Гостиница <span class="card-price">От 1500 ₽</span></p>
             <a class="button button-more" href="#">Подробнее</a>
@@ -207,23 +208,22 @@
             <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-ellipsis" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
       </section>
-      <section class="mailing mailing-catalog" data-test="subscribe">
-        <h2 class="mailing-title mailing-catalog-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-text mailing-catalog-text">
+      <section class="mailing-catalog" data-test="subscribe">
+        <h2 class="mailing-title mailing-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="mailing-text mailing-text-catalog">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form class="form mailing-form mailing-catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="form mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш e-mail</label>
-          <input class="mailing-input mailing-catalog-input" type="email" name="email" id="email"
-            placeholder="user@mail.ru" required>
-          <button class="button button-mailing button-mailing-catalog" type="submit">Подписаться</button>
+          <input class="mailing-input" type="email" name="email" id="email" placeholder="user@mail.ru" required>
+          <button class="button button-mailing" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -250,7 +250,7 @@
       </section>
       <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="html-academy-img" src="images/logo-html-academy.svg" width="115" height="33" alt="Разработчик сайта">
+        <span class="visually-hidden">Ссылка на разработчика сайта</span>
       </a>
     </footer>
   </body>
