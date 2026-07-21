@@ -16,63 +16,75 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
   background-color: #ffffff;
 }
 
 .navigation-link {
-  color: #000000;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 24px;
+  color: #000000;
   text-decoration: none;
-  text-align: center;
 }
 
 .favorite-counter {
   font-size: 10px;
   line-height: 10px;
+  color: #ffffff;
   text-align: center;
+  background-color: #7DB54F;
 }
 
 .button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  color: #FFFFFF;
-  background-color: #756157;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  background-color: #756157;
 }
 
 .hero {
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
   text-align: center;
-  background-size: 100% auto;
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-color: #3a4d53;
+  background-repeat: no-repeat;
+  background-size: 100% auto, cover;
 }
 
 .reasons-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: #000000;
   text-transform: uppercase;
   text-align: center;
 }
 
 .reasons-description {
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
   text-align: center;
 }
 
 .reasons-item {
-  background-color: #83B3D31F;
+  color: #FFFFFF;
   text-align: center;
+  background-color: #82B3D3;
+}
+
+.reasons-item1 {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reasons-item2 {
+  color: rgba(131, 179, 211, 0.2);
+  background-color: #83B3D333;
 }
 
 .reasons-item-title {
@@ -82,56 +94,55 @@ body {
   text-transform: uppercase;
 }
 
+.reasons-item-title1,
+.reasons-item-title2 {
+  color: #000000
+}
+
 .reasons-text {
   font-size: 18px;
+  line-height: 21px;
+}
+
+.reasons-text1,
+.reasons-text2 {
   color: #333333;
-}
-
-.reasons-item1 {
-  color: #FFFFFF;
-  background-color: #82B3D3;
-}
-
-.reasons-text1 {
-  color: #FFFFFF;
-}
-
-.reasons-item2 {
-  background-color: #83B3D333;
-}
-
-.advantages-item1 {
-  background-color: #83B3D31F;
 }
 
 .advantages-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: #000000;
   text-transform: uppercase;
   text-align: center;
 }
 
 .advantages-text {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
-  color: #333333;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item1 {
+  background-color: inherit;
 }
 
 .advantages-item-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  color: #000000;
   text-transform: uppercase;
   text-align: center;
 }
 
 .advantages-item-text {
   font-size: 18px;
-  color: #333333;
+  line-height: 21px;
   text-align: center;
-
 }
 
 .cta-title {
@@ -143,7 +154,6 @@ body {
 }
 
 .cta-text {
-  font-size: 18px;
   text-align: center;
 }
 
@@ -153,52 +163,53 @@ body {
 }
 
 .mailing {
-  background-image: url("../images/mailing-background.jpg");
-  background-repeat: no-repeat;
   text-align: center;
-  background-size: 100% auto;
+  background-image: url("../images/mailing-background.jpg");
+  background-color: #3a4d53;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mailing-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
 }
 
 .mailing-text {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .button-mailing {
-  background-color: #82B3D3;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #82B3D3;
 }
 
 .phone-number-link {
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
 }
 
 .catalog-header {
+  color: #ffffff;
   background-image: url("../images/filter-background.jpg");
+  background-color: #3a4d53;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: #FFFFFF;
+  background-size: cover;
 }
 
 .catalog-header-title {
@@ -209,8 +220,9 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
+  line-height: 21px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .catalog-filter-title {
@@ -227,6 +239,12 @@ body {
 
 .field-price {
   font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.price {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -253,11 +271,16 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .sort-select {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #E5E5E5;
 }
 
 .card-link {
@@ -269,13 +292,11 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  text-decoration: none;
 }
 
 .card-text {
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
 }
 
 .button-favorite {
@@ -283,12 +304,10 @@ body {
 }
 
 .card-rating {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
   background-color: #F2F2F2;
 }
 
@@ -296,9 +315,10 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  text-decoration: none;
   background-color: #82B3D3;
 }
 
@@ -308,20 +328,14 @@ body {
 }
 
 .pagination-ellipsis {
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-text-align: center;
-color: #000000;
-background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
-.mailing-title-catalog {
-  color: #000000;
-}
+.mailing-title-catalog,
 .mailing-text-catalog {
-  color: #333333;
-}
-.mailing-form {
-  text-align: center;
+  color: #000000;
 }
