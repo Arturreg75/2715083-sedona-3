@@ -77,12 +77,12 @@ body {
   background-color: #82B3D3;
 }
 
-.reasons-item1 {
+.reasons-item-first {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reasons-item2 {
+.reasons-item-second {
   color: rgba(131, 179, 211, 0.2);
   background-color: #83B3D333;
 }
@@ -94,8 +94,8 @@ body {
   text-transform: uppercase;
 }
 
-.reasons-item-title1,
-.reasons-item-title2 {
+.reasons-item-title-first,
+.reasons-item-title-second {
   color: #000000
 }
 
@@ -104,8 +104,8 @@ body {
   line-height: 21px;
 }
 
-.reasons-text1,
-.reasons-text2 {
+.reasons-text-first,
+.reasons-text-second {
   color: #333333;
 }
 
@@ -126,7 +126,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item1 {
+.advantages-item-first {
   background-color: inherit;
 }
 
@@ -193,6 +193,13 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #82B3D3;
+}
+
+.mailing-input {
+font-family: inherit;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
 }
 
 .phone-number-link {
@@ -276,7 +283,7 @@ body {
 }
 
 .sort-select {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
