@@ -14,12 +14,55 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding: 0 70px;
   background-color: #ffffff;
+}
+
+.page-main {
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.sedona-logo {
+  margin-right: 28px;
+}
+
+.navigation-list {
+  display: flex;
+  max-width: 500px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .navigation-link {
@@ -30,12 +73,32 @@ body {
   text-decoration: none;
 }
 
+.navigation-item {
+  padding: 20px 16px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
+.navigation-user-item {
+  padding: 22px 12px;
+}
+
 .favorite-counter {
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
   text-align: center;
   background-color: #7DB54F;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .button {
@@ -50,15 +113,34 @@ body {
   background-color: #756157;
 }
 
+.button-want {
+  border-radius: 4px;
+  width: 160px;
+  height: 36px;
+  padding: 8px 34px;
+
+}
+
+.hero-image {
+  display: block;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin: 0 auto;
+}
+
 .hero {
   text-align: center;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
-  background-color: #3a4d53;
+  background-color: #354751;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
+  background-position: bottom, top;
 }
 
 .reasons-title {
+  width: 630px;
+  margin: o auto;
+  padding: 69px 290px 25px 290px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -67,8 +149,19 @@ body {
   text-align: center;
 }
 
+.reasons-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .reasons-description {
+  width: 660px;
+  margin: 0 auto;
+  padding: 0 274px 69px 274px;
   text-align: center;
+
 }
 
 .reasons-item {
@@ -110,6 +203,8 @@ body {
 }
 
 .advantages-title {
+  width: 510px;
+  margin: 64px 347px 20px 347px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -122,7 +217,19 @@ body {
   text-align: center;
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
 .advantages-item {
+  width: 400px;
+  padding: 102px 0 30px 0;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -131,6 +238,7 @@ body {
 }
 
 .advantages-item-title {
+
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -140,12 +248,22 @@ body {
 }
 
 .advantages-item-text {
+  width: auto;
+  padding: 0 85px 81px 85px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+  margin: auto;
+}
+
 .cta-title {
+  padding: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -162,15 +280,23 @@ body {
   line-height: 36px;
 }
 
+.mailing-catalog {
+  padding: 96px 258px 104px;
+
+}
+
 .mailing {
   text-align: center;
   background-image: url("../images/mailing-background.jpg");
-  background-color: #3a4d53;
+  background-color: #354751;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .mailing-title {
+  margin: 0 auto;
+  padding-top: 96px;
+  width: 700px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -180,10 +306,19 @@ body {
 }
 
 .mailing-text {
+  margin: 0 auto;
+  width: 700px;
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
   text-align: center;
+}
+
+.mailing-form {
+  padding-bottom: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-mailing {
@@ -196,10 +331,15 @@ body {
 }
 
 .mailing-input {
-font-family: inherit;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
+  width: 452px;
+  padding: 14px 20px;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .phone-number-link {
@@ -214,7 +354,7 @@ line-height: 24px;
 .catalog-header {
   color: #ffffff;
   background-image: url("../images/filter-background.jpg");
-  background-color: #3a4d53;
+  background-color: #354751;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -225,11 +365,34 @@ line-height: 24px;
   line-height: 78px;
 }
 
+.breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.catalog-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .catalog-filter-title {
@@ -290,6 +453,13 @@ line-height: 24px;
   background-color: #E5E5E5;
 }
 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .card-link {
   text-decoration: none;
 }
@@ -310,6 +480,10 @@ line-height: 24px;
   background-color: #82B3D3;
 }
 
+.button-favorite-in {
+  background-color: #7DB54F;
+}
+
 .card-rating {
   font-size: 16px;
   line-height: 20px;
@@ -318,7 +492,26 @@ line-height: 24px;
   background-color: #F2F2F2;
 }
 
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+}
+
 .pagination-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -327,6 +520,7 @@ line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #82B3D3;
+  border-radius: 4px;
 }
 
 .pagination-current {
