@@ -14,6 +14,9 @@
   font-display: swap;
 }
 
+
+                    /* Общие стили */
+
 html {
   height: 100%;
 }
@@ -38,34 +41,36 @@ body {
   margin: 0 auto;
 }
 
-.page-header {
-  padding: 0 70px;
-  background-color: #ffffff;
-}
 
-.page-main {
-  flex-grow: 1;
+                    /* Шапка  */
+
+.page-header {
+  width: 100%;
+  height: 64px;
+  position: relative;
   background-color: #ffffff;
 }
 
 .navigation {
   display: flex;
-  align-items: center;
-}
-
-.sedona-logo {
-  margin-right: 28px;
+  flex-wrap: wrap;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   max-width: 500px;
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.sedona-logo {
+  margin: 0 28px -6px 70px;
+}
+
 .navigation-link {
+  display: block;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -84,6 +89,7 @@ body {
   padding: 0;
   margin: 0;
   margin-left: auto;
+  margin-right: 70px;
   list-style: none;
 }
 
@@ -92,6 +98,7 @@ body {
 }
 
 .favorite-counter {
+  margin: 11px 4px 33px 20px;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -112,21 +119,21 @@ body {
   text-align: center;
   background-color: #756157;
 }
-
 .button-want {
   border-radius: 4px;
   width: 160px;
   height: 36px;
   padding: 8px 34px;
-
+  margin: 14px 0 14px 20px;
 }
 
-.hero-image {
-  display: block;
-  padding-top: 51px;
-  padding-bottom: 82px;
-  margin: 0 auto;
+.page-main {
+  flex-grow: 1;
+  background-color: #ffffff;
 }
+
+
+                    /* Основная часть */
 
 .hero {
   text-align: center;
@@ -137,9 +144,16 @@ body {
   background-position: bottom, top;
 }
 
+.hero-image {
+  display: block;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin: 0 auto;
+}
+
 .reasons-title {
   width: 630px;
-  margin: o auto;
+  margin: 0;
   padding: 69px 290px 25px 290px;
   font-size: 30px;
   font-weight: 700;
@@ -149,6 +163,17 @@ body {
   text-align: center;
 }
 
+.reasons-description {
+  width: 660px;
+  margin: 0;
+  padding: 0 274px 69px 274px;
+  text-align: center;
+}
+
+
+
+
+
 .reasons-list {
   width: 100%;
   margin: 0;
@@ -156,13 +181,7 @@ body {
   list-style: none;
 }
 
-.reasons-description {
-  width: 660px;
-  margin: 0 auto;
-  padding: 0 274px 69px 274px;
-  text-align: center;
 
-}
 
 .reasons-item {
   color: #FFFFFF;
