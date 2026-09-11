@@ -35,7 +35,7 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-favorite" href="#">
-                <span class="visually-hidden">В избранном гостиниц</span>
+                <span class="visually-hidden">Гостиницы в избранном:</span>
                 <span class="favorite-counter">12</span>
               </a>
             </li>
@@ -47,7 +47,7 @@
       </header>
       <main class="page-main" data-test="main">
         <section class="hero" data-test="hero">
-          <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
+          <h1 class="visually-hidden">Город в Аризоне</h1>
           <img class="hero-image" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
@@ -103,25 +103,25 @@
         </section>
         <section class="advantages">
           <h2 class="advantages-title">
-            Приезжайте в Седону отдохнуть в комфорте и уюте!
+            Приезжайте в Седону отдохнуть <br>в комфорте и уюте!
           </h2>
           <p class="advantages-text">
             Опытный персонал и качественное обслуживание!
           </p>
           <ul class="advantages-list">
-            <li class="advantages-item">
+            <li class="advantages-item advantages-housing">
               <h3 class="advantages-item-title">Жильё</h3>
               <p class="advantages-item-text">
                 Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!
               </p>
             </li>
-            <li class="advantages-item  advantages-item-lighter">
+            <li class="advantages-item  advantages-item-lighter advantages-eat">
               <h3 class="advantages-item-title">Еда</h3>
               <p class="advantages-item-text">
                 Всегда заказывайте <br>топовый фирменный бургер, <br>вы не разочаруетесь!
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item advantages-souvenirs">
               <h3 class="advantages-item-title">Сувениры</h3>
               <p class="advantages-item-text">
                 Не только китайского, <br>но и настоящего местного <br>производства!
@@ -140,11 +140,11 @@
         <section class="mailing" data-test="subscribe">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-text">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама, <br>честное бойскаутское!
           </p>
           <form class="form mailing-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Ваш e-mail</label>
-            <input class="mailing-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <input class="mailing-input" type="email" name="email" id="email" placeholder="user@mail.ru" required>
             <button class="button button-blue button-mailing" type="submit">Подписаться</button>
           </form>
         </section>
@@ -170,7 +170,9 @@
             </li>
           </ul>
         </section>
-        <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="footer-contacts">
+          <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">Ссылка на разработчика сайта</span>
         </a>
@@ -182,17 +184,17 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="date-container">
-              <label class="modal-label" for="check-in-date">Дата заезда:</label>
+              <label class="modal-label" for="check-in-date">Дата Заезда:</label>
               <input class="modal-input" type="text" id="check-in-date" value="27 апреля 2020" name="date-in" required
-                placeholder="Укажите дату заезда">
+                placeholder="1 января 2026">
             </div>
             <span class="form-message form-message-error">
               Мы не можем отправить вас в прошлое.
             </span>
             <div class="date-container">
-              <label class="modal-label" for="date-of">Дата выезда:</label>
+              <label class="modal-label" for="date-of">Дата Выезда:</label>
               <input class="modal-input input-date" type="text" id="date-of" value="1 сентября 2023" name="date-out"
-                required placeholder="Укажите дату выезда">
+                required placeholder="31 декабря 2026">
             </div>
             <span class="form-message ">
               На эти даты есть свободные номера. Пока есть.
@@ -207,7 +209,7 @@
                       <path d="M0 0H14V2H0V0Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="modal-input modal-input-number" type="text" id="adults" value="2" name="adults"
+                  <input class="modal-input modal-input-number" type="text" id="adults" value="2" name="adults" placeholder="2"
                     required>
                   <button class="button-number button-plus" type="button">
                     <span class="visually-hidden">Увеличить</span>
@@ -238,7 +240,7 @@
                       <path d="M0 0H14V2H0V0Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="modal-input modal-input-number" type="text" id="child" value="2" name="children">
+                  <input class="modal-input modal-input-number" type="text" id="child" value="2" name="children" placeholder="1">
                   <button class="button-number button-plus" type="button">
                     <span class="visually-hidden">Увеличить</span>
                     <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">

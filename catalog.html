@@ -24,7 +24,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link  navigation-link-current" aria-current="page">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -35,7 +35,7 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-favorite" href="#">
-                <span class="visually-hidden">В избранном гостиниц</span>
+                <span class="visually-hidden">Гостиницы в избранном:</span>
                 <span class="favorite-counter">12</span>
               </a>
             </li>
@@ -67,22 +67,19 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="pool" checked>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="parking" checked>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="checkbox" name="wi-fi">
                       <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -93,23 +90,19 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-housing" value="hotel"
-                        checked>
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="radio" name="type-housing" value="hotel" checked>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-housing" value="motel">
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="radio" name="type-housing" value="motel">
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-housing" value="apartment">
-                      <span class="control-mark"></span>
+                      <input class="control-input" type="radio" name="type-housing" value="apartment">
                       <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
@@ -120,11 +113,13 @@
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
-                      <input class="range-input" type="text" inputmode="numeric" name="min-price" value="0">
+                      <input class="range-input" type="text" inputmode="numeric" name="min-price" value="0"
+                        placeholder="0">
                       <span class="range-label-text">от</span>
                     </label>
                     <label class="catalog-filter-label">
-                      <input class="range-input" type="text" inputmode="numeric" name="max-price" value="9000">
+                      <input class="range-input" type="text" inputmode="numeric" name="max-price" value="9000"
+                        placeholder="9000">
                       <span class="range-label-text">до</span>
                     </label>
                   </div>
@@ -148,8 +143,9 @@
           </div>
         </div>
         <section class="catalog" data-test="catalog">
+          <h2 class="visually-hidden">Список гостиниц</h2>
           <div class="search-container">
-            <h2 class="result-control-title">Найдено гостиниц: <span class="quantity-found">38</span></h2>
+            <h3 class="result-control-title">Найдено гостиниц: <span class="quantity-found">38</span></h3>
             <label class="result-control-sort">
               <span class="visually-hidden">Сортировка</span>
               <select class="sort-select" name="sort">
@@ -173,70 +169,70 @@
           <ul class="card-list">
             <li class="card-item">
               <h3 class="card-title">
-                <a class="card-link" href="#">Amara Resort &amp; Spa</a>
+                <a class="card-link" href="#" tabindex="-1">Amara Resort &amp; Spa</a>
               </h3>
-              <div class="card-image-container">
-                <a class="card-link" href="#">
-                  <img class="card-image" src="images/hotels/amara-1.jpg" width="300" height="212"
-                    alt="Amara Resort & Spa">
-                </a>
-              </div>
+              <a class="card-link card-image-link" href="#" tabindex="-1">
+                <img class="card-image" src="images/hotels/amara-1.jpg" width="300" height="212"
+                  alt="Amara Resort & Spa">
+              </a>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 4000 ₽</p>
               <a class="button button-brown button-more" href="#">Подробнее</a>
               <button class="button button-blue button-favorite" type="button">В избранное</button>
-              <span class="star-rating four-stars">Четыре звезды</span>
+              <p class="star-rating four-stars">
+                <span class="visually-hidden">Четыре звезды</span>
+              </p>
               <p class="card-rating">Рейтинг: 8,5</p>
             </li>
             <li class="card-item">
               <h3 class="card-title">
-                <a class="card-link" href="#">Villas at Poco Diablo</a>
+                <a class="card-link" href="#" tabindex="-1">Villas at Poco Diablo</a>
               </h3>
-              <div class="card-image-container">
-                <a class="card-link" href="#">
-                  <img class="card-image" src="images/hotels/villas-1.jpg" width="300" height="212"
-                    alt="Villas at Poco Diablo">
-                </a>
-              </div>
+              <a class="card-link card-image-link" href="#" tabindex="-1">
+                <img class="card-image" src="images/hotels/villas-1.jpg" width="300" height="212"
+                  alt="Villas at Poco Diablo">
+              </a>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 5000 ₽</p>
               <a class="button button-brown button-more" href="#">Подробнее</a>
-              <button class="button  button-blue button-favorite-in" type="button">В избранном</button>
-              <span class="star-rating four-stars">Четыре звезды</span>
+              <button class="button button-blue button-favorite-in" type="button">В избранном</button>
+              <p class="star-rating four-stars">
+                <span class="visually-hidden">Четыре звезды</span>
+              </p>
               <p class="card-rating">Рейтинг: 9,2</p>
             </li>
             <li class="card-item">
               <h3 class="card-title">
-                <a class="card-link" href="#">Desert Quail Inn</a>
+                <a class="card-link" href="#" tabindex="-1">Desert Quail Inn</a>
               </h3>
-              <div class="card-image-container">
-                <a class="card-link" href="#">
-                  <img class="card-image" src="images/hotels/desert-1.jpg" width="300" height="212"
-                    alt="Desert Quail Inn">
-                </a>
-              </div>
+              <a class="card-link card-image-link" href="#" tabindex="-1">
+                <img class="card-image" src="images/hotels/desert-1.jpg" width="300" height="212"
+                  alt="Desert Quail Inn">
+              </a>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 2500 ₽</p>
               <a class="button button-brown button-more" href="#">Подробнее</a>
-              <button class="button  button-blue button-favorite" type="button">В избранное</button>
-              <span class="star-rating three-stars">Три звезды</span>
+              <button class="button button-blue button-favorite" type="button">В избранное</button>
+              <p class="star-rating three-stars">
+                <span class="visually-hidden">Три звезды</span>
+              </p>
               <p class="card-rating">Рейтинг: 6,9</p>
             </li>
             <li class="card-item">
               <h3 class="card-title">
-                <a class="card-link" href="#">GreenTree Inn</a>
+                <a class="card-link" href="#" tabindex="-1">GreenTree Inn</a>
               </h3>
-              <div class="card-image-container">
-                <a class="card-link" href="#">
-                  <img class="card-image" src="images/hotels/greentree-1.jpg" width="300" height="212"
-                    alt="GreenTree Inn">
-                </a>
-              </div>
+              <a class="card-link card-image-link" href="#" tabindex="-1">
+                <img class="card-image" src="images/hotels/greentree-1.jpg" width="300" height="212"
+                  alt="GreenTree Inn">
+              </a>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 1500 ₽</p>
               <a class="button button-brown button-more" href="#">Подробнее</a>
               <button class="button button-blue button-favorite" type="button">В избранное</button>
-              <span class="star-rating two-stars">Две звезды</span>
+              <p class="star-rating two-stars">
+                <span class="visually-hidden">ТрДвеи звезды</span>
+              </p>
               <p class="card-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
@@ -264,11 +260,11 @@
         <section class="mailing mailing-catalog" data-test="subscribe">
           <h2 class="mailing-title mailing-title-catalog">Подпишитесь на рассылку</h2>
           <p class="mailing-text mailing-text-catalog">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама, <br>честное бойскаутское!
           </p>
-          <form class="form mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Ваш e-mail</label>
-            <input class="mailing-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <input class="mailing-input" type="email" name="email" id="email" placeholder="user@mail.ru" required>
             <button class="button button-blue button-mailing" type="submit">Подписаться</button>
           </form>
         </section>
@@ -294,11 +290,14 @@
             </li>
           </ul>
         </section>
-        <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="footer-contacts">
+          <a class="phone-number-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">Ссылка на разработчика сайта</span>
         </a>
       </footer>
     </div>
   </body>
+
 </html>
