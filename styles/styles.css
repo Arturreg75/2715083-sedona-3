@@ -1299,7 +1299,7 @@ body {
 
 .button-favorite-in:hover:not(:disabled),
 .button-favorite-in:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button-favorite-in:active {
@@ -1307,7 +1307,7 @@ body {
 }
 
 .button-favorite-in:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   cursor: default;
 }
 
